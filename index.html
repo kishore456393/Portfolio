@@ -1,664 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kishore S - AI & Data Science Portfolio | Full-Stack Developer, Machine Learning, AWS Cloud">
-    <meta name="keywords" content="Kishore S, Portfolio, AI, Data Science, Full Stack Developer, Machine Learning, AWS">
-    <meta name="author" content="Kishore S">
-    <title>Kishore S | AI & Data Engineer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishore S | AI & Data Science</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cursor Glow Effect -->
-    <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- Animated Background -->
-    <div class="bg-grid"></div>
-    <div class="gradient-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+<!-- PROGRESS BAR -->
+<div id="spb"></div>
+
+<!-- CUSTOM CURSOR -->
+<div id="c-aura"></div>
+<div id="c-ring"></div>
+<div id="c-core"></div>
+
+<!-- AURORA BG -->
+<canvas id="aurora"></canvas>
+
+<!-- ════ NAV ════ -->
+<nav id="nav">
+  <a href="#hero" class="n-logo">KS<em>.</em></a>
+  <ul class="n-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:kishore456393@gmail.com" class="n-hire">Hire Me</a>
+</nav>
+
+<!-- ════ HERO ════ -->
+<section id="hero">
+  <div class="h-left">
+    <div class="h-badge">
+      <div class="h-badge-dot"></div>
+      Available for Opportunities
+    </div>
+    <h1 class="h-name">
+      <span class="row1">KISHORE</span><br>
+      <span class="row2"><em>S</em></span>
+    </h1>
+    <div class="h-role">
+      <span class="pfx">role =</span> "<span id="tw"></span><span class="cb"></span>"
+    </div>
+    <p class="h-bio">
+      AI & Data Science undergraduate building <strong>intelligent systems</strong> at the intersection of machine learning, full-stack development, and AWS cloud — turning raw data into real-world impact.
+    </p>
+    <div class="h-btns">
+      <a href="#projects" class="btn-p"><i class="fas fa-terminal"></i> View Projects</a>
+      <a href="#contact" class="btn-s"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+    </div>
+    <div class="h-socials">
+      <a href="https://github.com/kishore456393" target="_blank" class="h-soc" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/kishore-s-8613302a4" target="_blank" class="h-soc" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://leetcode.com/u/k_i_s_h_o_r_e_45_/" target="_blank" class="h-soc" title="LeetCode"><i class="fas fa-code"></i></a>
+      <a href="mailto:kishore456393@gmail.com" class="h-soc" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="h-right">
+    <div class="code-panel">
+      <div class="cp-bar">
+        <div class="cp-dot" style="background:#ff5f57"></div>
+        <div class="cp-dot" style="background:#febc2e"></div>
+        <div class="cp-dot" style="background:#28c840"></div>
+        <span class="cp-fn">portfolio.py</span>
+      </div>
+      <div class="cp-body">
+        <div class="cl1"><span class="ln">1</span><span class="kw">class</span> <span class="cl">Developer</span><span class="pn">:</span></div>
+        <div class="cl1"><span class="ln">2</span><span class="in1 kw">def</span> <span class="fn">__init__</span><span class="pn">(self):</span></div>
+        <div class="cl1"><span class="ln">3</span><span class="in2">self.name = </span><span class="st">"Kishore S"</span></div>
+        <div class="cl1"><span class="ln">4</span><span class="in2">self.role = </span><span class="st">"AI & Data Engineer"</span></div>
+        <div class="cl1"><span class="ln">5</span><span class="in2">self.stack = [</span></div>
+        <div class="cl1"><span class="ln">6</span><span class="in2">&nbsp; <span class="st">"Python"</span>, <span class="st">"Java"</span>,</span></div>
+        <div class="cl1"><span class="ln">7</span><span class="in2">&nbsp; <span class="st">"Machine Learning"</span>,</span></div>
+        <div class="cl1"><span class="ln">8</span><span class="in2">&nbsp; <span class="st">"Next.js"</span>, <span class="st">"AWS"</span></span></div>
+        <div class="cl1"><span class="ln">9</span><span class="in2">]</span></div>
+        <div class="cl1"><span class="ln">10</span><span class="in2">self.leetcode = </span><span class="nu">170</span><span class="pn">+</span></div>
+        <div class="cl1"><span class="ln">11</span><span class="in2">self.cgpa = </span><span class="nu">8.31</span></div>
+        <div class="cl1"><span class="ln">12</span></div>
+        <div class="cl1"><span class="ln">13</span><span class="in1 kw">def</span> <span class="fn">build</span><span class="pn">(self):</span></div>
+        <div class="cl1"><span class="ln">14</span><span class="in2 kw">return</span> <span class="st">"Amazing things 🚀"</span></div>
+        <div class="cl1"><span class="ln">15</span></div>
+        <div class="cl1"><span class="ln">16</span><span class="cm"># Initialising...</span></div>
+        <div class="cl1"><span class="ln">17</span>dev = <span class="cl">Developer</span><span class="pn">()</span></div>
+        <div class="cl1"><span class="ln">18</span><span class="fn">print</span><span class="pn">(</span>dev.build<span class="pn">())</span> <span class="cm"># 🚀</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dvd"></div>
+
+<!-- ════ ABOUT ════ -->
+<section id="about">
+  <div class="a-text rv">
+    <div class="s-label">01 — Who I Am</div>
+    <h2 class="s-title">Building the Future<br>with <em>Data & AI</em></h2>
+    <p>I'm an <strong>AI & Data Science</strong> undergraduate at PSNA College of Engineering and Technology, Dindigul — deeply focused on machine learning, full-stack development, and AWS cloud infrastructure.</p>
+    <p>My journey started with a curiosity about how data shapes decisions. Today I build <strong>intelligent applications</strong> that leverage AI to solve real-world problems — from computer-vision queue systems to paperless billing platforms that ship to production.</p>
+    <p>I write clean, efficient code and continuously push my limits. Outside of building, you'll find me grinding LeetCode (170+ solved!) or exploring the latest in cloud computing.</p>
+    <div class="a-stats">
+      <div class="st-card rv dl1"><div class="st-num" data-count="170">0</div><div class="st-lbl">LeetCode Problems</div></div>
+      <div class="st-card rv dl2"><div class="st-num" data-count="5">0</div><div class="st-lbl">Major Projects</div></div>
+      <div class="st-card rv dl3"><div class="st-num" data-count="6">0</div><div class="st-lbl">Certifications</div></div>
+      <div class="st-card rv dl4"><div class="st-num" data-count="50">0</div><div class="st-lbl">Day Streak 🔥</div></div>
+    </div>
+  </div>
+  <div class="a-visual rv dl2">
+    <div class="orb-wrap">
+      <div class="orb-ring"><div class="orb-dot2 od-blue"></div></div>
+      <div class="orb-ring"><div class="orb-dot2 od-sky"></div></div>
+      <div class="orb-ring"><div class="orb-dot2 od-amb"></div></div>
+      <div class="orb-core">
+        <div class="oc-icon">🤖</div>
+        <div class="oc-name">AI Builder</div>
+        <div class="oc-sub">8.31 CGPA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dvd"></div>
+
+<!-- ════ SKILLS ════ -->
+<section id="skills">
+  <div class="rv">
+    <div class="s-label">02 — Arsenal</div>
+    <h2 class="s-title">Technical <em>Skills</em></h2>
+  </div>
+  <div class="sk-grid">
+    <div class="sk-card rv dl1">
+      <div class="sk-head"><i class="fas fa-code"></i> Programming</div>
+      <div class="sk-tags">
+        <span class="sk-tag">Python</span><span class="sk-tag">Java</span>
+        <span class="sk-tag">DSA</span><span class="sk-tag">OOP</span><span class="sk-tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="sk-card rv dl2">
+      <div class="sk-head"><i class="fas fa-globe"></i> Web Development</div>
+      <div class="sk-tags">
+        <span class="sk-tag">HTML5</span><span class="sk-tag">CSS3</span>
+        <span class="sk-tag">Next.js</span><span class="sk-tag">REST APIs</span><span class="sk-tag">Prisma</span>
+      </div>
+    </div>
+    <div class="sk-card rv dl3">
+      <div class="sk-head"><i class="fas fa-brain"></i> ML & AI</div>
+      <div class="sk-tags">
+        <span class="sk-tag">OpenCV</span><span class="sk-tag">Pandas</span>
+        <span class="sk-tag">NumPy</span><span class="sk-tag">Scikit-learn</span><span class="sk-tag">Flask</span>
+      </div>
+    </div>
+    <div class="sk-card rv dl1">
+      <div class="sk-head"><i class="fab fa-aws"></i> Cloud — AWS</div>
+      <div class="sk-tags">
+        <span class="sk-tag">S3</span><span class="sk-tag">Redshift</span>
+        <span class="sk-tag">Glue</span><span class="sk-tag">Athena</span><span class="sk-tag">IAM</span>
+      </div>
+    </div>
+    <div class="sk-card rv dl2">
+      <div class="sk-head"><i class="fas fa-database"></i> Databases</div>
+      <div class="sk-tags">
+        <span class="sk-tag">MySQL</span><span class="sk-tag">PostgreSQL</span><span class="sk-tag">Supabase</span>
+      </div>
+    </div>
+    <div class="sk-card rv dl3">
+      <div class="sk-head"><i class="fas fa-robot"></i> RPA & DevTools</div>
+      <div class="sk-tags">
+        <span class="sk-tag">UiPath</span><span class="sk-tag">Git/GitHub</span>
+        <span class="sk-tag">ETL Pipelines</span><span class="sk-tag">VS Code</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dvd"></div>
+
+<!-- ════ PROJECTS ════ -->
+<section id="projects">
+  <div class="rv">
+    <div class="s-label">03 — Work</div>
+    <h2 class="s-title">Featured <em>Projects</em></h2>
+  </div>
+  <div class="pr-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="pr-card rv">
+      <div>
+        <div class="pr-badge">Featured Project</div>
+        <h3 class="pr-title">
+          <a href="https://github.com/kishore456393/QueueWorking" target="_blank" rel="noopener">AI-Powered Smart Queue Management</a>
+        </h3>
+        <p class="pr-desc">An intelligent queue management system using real-time video analytics and computer vision. Detects people, predicts wait times, and optimises resource allocation through interactive dashboards.</p>
+        <ul class="pr-feats">
+          <li>Real-time people detection & counting via OpenCV</li>
+          <li>ML models for queue analytics & wait-time predictions</li>
+          <li>Interactive dashboards for resource allocation</li>
+          <li>Reduced wait times & improved crowd management</li>
+        </ul>
+        <div class="pr-techs">
+          <span class="pr-tech">Python</span>
+          <span class="pr-tech">OpenCV</span>
+          <span class="pr-tech">Machine Learning</span>
+          <span class="pr-tech">Flask</span>
+        </div>
+      </div>
+      <div class="pr-links">
+        <a href="https://github.com/kishore456393/QueueWorking" target="_blank" rel="noopener" class="pr-lnk" title="GitHub Repo"><i class="fab fa-github"></i></a>
+      </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>KS<span class="logo-bracket">/&gt;</span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- PROJECT 2 -->
+    <div class="pr-card rv">
+      <div>
+        <div class="pr-badge">Featured Project</div>
+        <h3 class="pr-title">
+          <a href="https://eco-receipt.vercel.app/" target="_blank" rel="noopener">EcoReceipt — Paperless Billing Platform</a>
+        </h3>
+        <p class="pr-desc">A full-stack paperless billing platform enabling digital receipts via QR codes, SMS, and email. Features barcode-based product lookup, inventory tracking, customer self-checkout, UPI payments, and an analytics dashboard.</p>
+        <ul class="pr-feats">
+          <li>Digital receipts via QR, SMS & Email</li>
+          <li>Barcode-based billing & inventory management</li>
+          <li>Customer self-checkout with UPI integration</li>
+          <li>Analytics dashboard for revenue insights</li>
+        </ul>
+        <div class="pr-techs">
+          <span class="pr-tech">Next.js</span>
+          <span class="pr-tech">Prisma</span>
+          <span class="pr-tech">PostgreSQL</span>
+          <span class="pr-tech">Supabase</span>
+          <span class="pr-tech">Google OAuth</span>
         </div>
-    </nav>
+      </div>
+      <div class="pr-links">
+        <a href="https://eco-receipt.vercel.app/" target="_blank" rel="noopener" class="pr-lnk" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+        <a href="https://github.com/kishore456393/EcoReceipt" target="_blank" rel="noopener" class="pr-lnk" title="GitHub Repo"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-greeting" data-animate="fade-up">
-                    <span class="greeting-line"></span>
-                    <span>Hello, I'm</span>
-                </div>
-                <h1 class="hero-name" data-animate="fade-up" data-delay="100">
-                    Kishore <span class="text-gradient">S</span>
-                </h1>
-                <div class="hero-typewriter" data-animate="fade-up" data-delay="200">
-                    <span class="typewriter-prefix">I build </span>
-                    <span class="typewriter-text" id="typewriterText"></span>
-                    <span class="typewriter-cursor">|</span>
-                </div>
-                <p class="hero-description" data-animate="fade-up" data-delay="300">
-                    AI & Data Science undergraduate with hands-on experience in machine learning, 
-                    full-stack development, and AWS cloud technologies. Passionate about building 
-                    scalable applications and data-driven solutions.
-                </p>
-                <div class="hero-actions" data-animate="fade-up" data-delay="400">
-                    <a href="#projects" class="btn btn-primary">
-                        <span>View My Work</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <span>Get In Touch</span>
-                    </a>
-                </div>
-                <div class="hero-socials" data-animate="fade-up" data-delay="500">
-                    <a href="https://github.com/kishore456393" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kishore-s-8613302a4" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://leetcode.com/u/k_i_s_h_o_r_e_45_/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LeetCode">
-                        <i class="fas fa-code"></i>
-                    </a>
-                    <a href="mailto:kishore456393@gmail.com" class="social-link" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual" data-animate="fade-left" data-delay="300">
-                <div class="code-window">
-                    <div class="code-header">
-                        <div class="code-dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <span class="code-title">portfolio.py</span>
-                    </div>
-                    <div class="code-body">
-                        <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span>:
-    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-param">self</span>):
-        <span class="code-param">self</span>.name = <span class="code-string">"Kishore S"</span>
-        <span class="code-param">self</span>.role = <span class="code-string">"AI & Data Engineer"</span>
-        <span class="code-param">self</span>.skills = [
-            <span class="code-string">"Python"</span>, <span class="code-string">"Java"</span>,
-            <span class="code-string">"Machine Learning"</span>,
-            <span class="code-string">"Full-Stack Dev"</span>,
-            <span class="code-string">"AWS Cloud"</span>
-        ]
-        <span class="code-param">self</span>.passion = <span class="code-string">"∞"</span>
-
-    <span class="code-keyword">def</span> <span class="code-func">build</span>(<span class="code-param">self</span>):
-        <span class="code-keyword">return</span> <span class="code-string">"Amazing things 🚀"</span></code></pre>
-                    </div>
-                </div>
-            </div>
+    <!-- PROJECT 3 -->
+    <div class="pr-card rv">
+      <div>
+        <div class="pr-badge">Featured Project</div>
+        <h3 class="pr-title">
+          <a href="https://github.com/kishore456393/Northeast-Explorer-Pro-App" target="_blank" rel="noopener">Smart Eco & Cultural Tourism Platform</a>
+        </h3>
+        <p class="pr-desc">A smart digital platform promoting eco and cultural tourism with interactive maps, AI-powered destination recommendations, location-based services, and comprehensive travel planning tools.</p>
+        <ul class="pr-feats">
+          <li>Interactive maps & location-based services</li>
+          <li>Smart destination recommendations</li>
+          <li>Comprehensive travel planning toolkit</li>
+          <li>Responsive design & performance optimised</li>
+        </ul>
+        <div class="pr-techs">
+          <span class="pr-tech">Python</span>
+          <span class="pr-tech">JavaScript</span>
+          <span class="pr-tech">HTML/CSS</span>
+          <span class="pr-tech">MySQL</span>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="mouse-wheel"></div>
-            </div>
-            <span>Scroll down</span>
+      </div>
+      <div class="pr-links">
+        <a href="https://github.com/kishore456393/Northeast-Explorer-Pro-App" target="_blank" rel="noopener" class="pr-lnk" title="GitHub Repo"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="dvd"></div>
+
+<!-- ════ ACHIEVEMENTS ════ -->
+<section id="achievements">
+  <div class="rv">
+    <div class="s-label">04 — Milestones</div>
+    <h2 class="s-title">Awards & <em>Achievements</em></h2>
+  </div>
+  <div class="ac-grid">
+    <div class="ac-card rv dl1"><div class="ac-icon">🏆</div><div class="ac-title">Top 3 — Smart India Hackathon</div><div class="ac-desc">Secured Top 3 position in intra-college SIH, demonstrating strong problem-solving and teamwork.</div></div>
+    <div class="ac-card rv dl2"><div class="ac-icon">🥈</div><div class="ac-title">2nd Prize — Code Scramble</div><div class="ac-desc">Won 2nd Prize at Code Scramble, PSNA College 2025 — competitive coding testing deep algorithmic skills.</div></div>
+    <div class="ac-card rv dl3"><div class="ac-icon">⚡</div><div class="ac-title">Regenhack VR 2.0 — SRM</div><div class="ac-desc">Participated at SRM Institute's Regenhack VR 2.0, emphasising rapid prototyping and logic building.</div></div>
+    <div class="ac-card rv dl1"><div class="ac-icon">💻</div><div class="ac-title">170+ LeetCode Problems</div><div class="ac-desc">Solved 170+ problems and earned a 50-day coding streak badge — consistency and dedication at scale.</div></div>
+    <div class="ac-card rv dl2"><div class="ac-icon">🎬</div><div class="ac-title">4th Prize — Short Film</div><div class="ac-desc">4th Prize, PSNA College 2025 — recognised for creativity, storytelling, and video production skills.</div></div>
+  </div>
+</section>
+
+<div class="dvd"></div>
+
+<!-- ════ CERTIFICATIONS ════ -->
+<section id="certifications">
+  <div class="rv">
+    <div class="s-label">05 — Credentials</div>
+    <h2 class="s-title">Professional <em>Certifications</em></h2>
+  </div>
+  <div class="cr-grid">
+    <div class="cr-card rv dl1"><div class="cr-issuer">Amazon Web Services</div><div class="cr-name">AWS Data Engineer Associate</div><a href="https://www.credly.com/badges/08225dc3-dbf9-410e-893d-8983459ab809/public_url" target="_blank" class="cr-lnk"><i class="fas fa-external-link-alt"></i> View Credential</a></div>
+    <div class="cr-card rv dl2"><div class="cr-issuer">Simplilearn</div><div class="cr-name">Data Analytics</div></div>
+    <div class="cr-card rv dl3"><div class="cr-issuer">Geeks for Geeks</div><div class="cr-name">Python Programming</div></div>
+    <div class="cr-card rv dl1"><div class="cr-issuer">Code Tantra</div><div class="cr-name">Core Java</div></div>
+    <div class="cr-card rv dl2"><div class="cr-issuer">DataCamp</div><div class="cr-name">Git & GitHub</div></div>
+    <div class="cr-card rv dl3"><div class="cr-issuer">ICT Academy — UiPath</div><div class="cr-name">Automation Developer Associate</div></div>
+  </div>
+</section>
+
+<div class="dvd"></div>
+
+<!-- ════ EDUCATION ════ -->
+<section id="education">
+  <div class="rv">
+    <div class="s-label">06 — Background</div>
+    <h2 class="s-title">Academic <em>Journey</em></h2>
+  </div>
+  <div class="tl rv">
+    <div class="tl-item">
+      <div class="tl-date">2023 — 2027 · Ongoing</div>
+      <div class="tl-box">
+        <div class="tl-deg">Bachelor of Technology (B.Tech)</div>
+        <div class="tl-field">Artificial Intelligence & Data Engineering</div>
+        <div class="tl-inst">PSNA College of Engineering and Technology, Dindigul</div>
+        <span class="tl-gpa">CGPA: 8.31 / 10 (Till 5th Sem)</span>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">2023</div>
+      <div class="tl-box">
+        <div class="tl-deg">Higher Secondary Certificate (HSC)</div>
+        <div class="tl-field">Class 12</div>
+        <div class="tl-inst">Vidya Sikshaa Matric Higher Secondary School, Dindigul</div>
+        <span class="tl-gpa">Score: 79.5%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dvd"></div>
+
+<!-- ════ CONTACT ════ -->
+<section id="contact">
+  <div class="rv">
+    <div class="s-label">07 — Let's Talk</div>
+    <h2 class="s-title">Get In <em>Touch</em></h2>
+  </div>
+  <div class="ct-wrap">
+    <div class="rv">
+      <p class="ct-intro">I'm actively seeking <strong>software engineering</strong> or <strong>data science</strong> opportunities. Whether you have a role, a project idea, or just want to connect — my inbox is always open!</p>
+      <div class="ct-methods">
+        <a href="mailto:kishore456393@gmail.com" class="ct-item">
+          <div class="ct-ico"><i class="fas fa-envelope"></i></div>
+          <div><div class="ct-lbl">Email</div><div class="ct-val">kishore456393@gmail.com</div></div>
+        </a>
+        <a href="tel:+918838171287" class="ct-item">
+          <div class="ct-ico"><i class="fas fa-phone"></i></div>
+          <div><div class="ct-lbl">Phone</div><div class="ct-val">+91 8838171287</div></div>
+        </a>
+        <a href="https://www.linkedin.com/in/kishore-s-8613302a4" target="_blank" class="ct-item">
+          <div class="ct-ico"><i class="fab fa-linkedin-in"></i></div>
+          <div><div class="ct-lbl">LinkedIn</div><div class="ct-val">kishore-s-8613302a4</div></div>
+        </a>
+        <div class="ct-item" style="pointer-events:none;opacity:.65">
+          <div class="ct-ico"><i class="fas fa-map-marker-alt"></i></div>
+          <div><div class="ct-lbl">Location</div><div class="ct-val">Dindigul, Tamil Nadu, India</div></div>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="cf rv dl2">
+      <div class="cf-g"><label>Name</label><input type="text" placeholder="Your name"></div>
+      <div class="cf-g"><label>Email</label><input type="email" placeholder="you@email.com"></div>
+      <div class="cf-g"><label>Subject</label><input type="text" placeholder="What's this about?"></div>
+      <div class="cf-g"><label>Message</label><textarea rows="5" placeholder="Tell me about your opportunity or project..."></textarea></div>
+      <button class="cf-sub" onclick="submitForm(this)"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">01. About Me</span>
-                <h2 class="section-title">Who I Am</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-content" data-animate="fade-right">
-                    <p>
-                        I'm an <strong>AI & Data Science</strong> undergraduate at PSNA College of Engineering and Technology, 
-                        Dindigul, with a strong foundation in machine learning, full-stack web development, and cloud technologies.
-                    </p>
-                    <p>
-                        My journey in tech started with a curiosity about how data shapes decisions. Today, I build 
-                        <strong>intelligent applications</strong> that leverage AI and data to solve real-world problems — from 
-                        smart queue management systems using computer vision to paperless billing platforms.
-                    </p>
-                    <p>
-                        I'm passionate about writing clean, efficient code and continuously learning new technologies. 
-                        When I'm not coding, you'll find me solving problems on LeetCode (170+ solved!) or exploring 
-                        the latest in cloud computing and automation.
-                    </p>
-                </div>
-                <div class="about-stats" data-animate="fade-left">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-code"></i></div>
-                        <div class="stat-number" data-count="170">0</div>
-                        <div class="stat-label">LeetCode Problems</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
-                        <div class="stat-number" data-count="3">0</div>
-                        <div class="stat-label">Major Projects</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
-                        <div class="stat-number" data-count="6">0</div>
-                        <div class="stat-label">Certifications</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fas fa-fire"></i></div>
-                        <div class="stat-number" data-count="50">0</div>
-                        <div class="stat-label">Day Coding Streak</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="f-brand">KS<em>.</em></div>
+  <div class="f-copy">© 2025 Kishore S — Designed & Built with precision.</div>
+  <div class="f-soc">
+    <a href="https://github.com/kishore456393" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/kishore-s-8613302a4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://leetcode.com/u/k_i_s_h_o_r_e_45_/" target="_blank"><i class="fas fa-code"></i></a>
+  </div>
+</footer>
 
-    <!-- Skills Section -->
-    <section class="section section-dark" id="skills">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">02. Skills</span>
-                <h2 class="section-title">Technical Arsenal</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category" data-animate="fade-up" data-delay="0">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h3>Programming</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">DSA</span>
-                        <span class="skill-tag">OOP</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-animate="fade-up" data-delay="100">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-globe"></i></div>
-                        <h3>Web Development</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">REST APIs</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-animate="fade-up" data-delay="200">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                        <h3>ML & AI</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-animate="fade-up" data-delay="300">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                        <h3>Cloud (AWS)</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">S3</span>
-                        <span class="skill-tag">Redshift</span>
-                        <span class="skill-tag">Glue</span>
-                        <span class="skill-tag">Athena</span>
-                        <span class="skill-tag">IAM</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-animate="fade-up" data-delay="400">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-database"></i></div>
-                        <h3>Databases</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Supabase</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-animate="fade-up" data-delay="500">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-robot"></i></div>
-                        <h3>RPA & Automation</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">UiPath Studio</span>
-                        <span class="skill-tag">Orchestrator</span>
-                        <span class="skill-tag">Data Scraping</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-animate="fade-up" data-delay="600">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
-                        <h3>Tools</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">REST APIs</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-animate="fade-up" data-delay="700">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
-                        <h3>Data Engineering</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ETL Pipelines</span>
-                        <span class="skill-tag">Data Processing</span>
-                        <span class="skill-tag">Data Cleaning</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">03. Projects</span>
-                <h2 class="section-title">Featured Work</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="projects-list">
-                <!-- Project 1 -->
-                <div class="project-card project-featured" data-animate="fade-up">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <i class="fas fa-users-line"></i>
-                            <div class="floating-particles">
-                                <span></span><span></span><span></span><span></span><span></span>
-                            </div>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/kishore456393/QueueWorking" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View on GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-label">Featured Project</span>
-                        <h3 class="project-title">AI-Powered Smart Queue Management</h3>
-                        <div class="project-description">
-                            <p>An intelligent queue management system using real-time video analytics and computer vision. 
-                            Features people detection & counting, ML-powered waiting time analysis, queue length monitoring, 
-                            and peak hours prediction with interactive dashboards for resource optimization.</p>
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Real-time people detection using OpenCV</li>
-                            <li>ML models for queue analytics & predictions</li>
-                            <li>Interactive dashboards for resource allocation</li>
-                            <li>Reduced wait times & improved crowd management</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>OpenCV</span>
-                            <span>Machine Learning</span>
-                            <span>Flask</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card project-featured reverse" data-animate="fade-up">
-                    <div class="project-image">
-                        <div class="project-image-placeholder eco">
-                            <i class="fas fa-receipt"></i>
-                            <div class="floating-particles">
-                                <span></span><span></span><span></span><span></span><span></span>
-                            </div>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://eco-receipt.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View Live">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                            <a href="https://github.com/kishore456393/EcoReceipt" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View on GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-label">Featured Project</span>
-                        <h3 class="project-title">EcoReceipt — Paperless Billing Platform</h3>
-                        <div class="project-description">
-                            <p>A full-stack paperless billing platform enabling digital receipts via QR codes, SMS, and email. 
-                            Features barcode-based product lookup, inventory tracking with low-stock alerts, customer self-checkout 
-                            with mobile scanning, UPI payments, and an analytics dashboard for revenue insights.</p>
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Digital receipts via QR, SMS & Email</li>
-                            <li>Barcode-based billing & inventory management</li>
-                            <li>Customer self-checkout with UPI integration</li>
-                            <li>Analytics dashboard for revenue trends</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>Prisma</span>
-                            <span>PostgreSQL</span>
-                            <span>Supabase</span>
-                            <span>Google OAuth</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card project-featured" data-animate="fade-up">
-                    <div class="project-image">
-                        <div class="project-image-placeholder tourism">
-                            <i class="fas fa-mountain-sun"></i>
-                            <div class="floating-particles">
-                                <span></span><span></span><span></span><span></span><span></span>
-                            </div>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/kishore456393/Northeast-Explorer-Pro-App"_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="View on GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-label">Featured Project</span>
-                        <h3 class="project-title">Smart Eco & Cultural Tourism Platform</h3>
-                        <div class="project-description">
-                            <p>A smart digital platform promoting eco and cultural tourism with interactive maps, 
-                            destination recommendations, location-based services, and comprehensive travel planning tools. 
-                            Built with performance optimization and responsive design as core principles.</p>
-                        </div>
-                        <ul class="project-highlights">
-                            <li>Interactive maps & location-based services</li>
-                            <li>Smart destination recommendations</li>
-                            <li>Comprehensive travel planning tools</li>
-                            <li>Responsive design & performance optimized</li>
-                        </ul>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>HTML/CSS</span>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="section section-dark" id="achievements">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">04. Achievements</span>
-                <h2 class="section-title">Milestones & Awards</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="achievements-grid">
-                <div class="achievement-card" data-animate="fade-up" data-delay="0">
-                    <div class="achievement-icon trophy">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>Top 3 — Smart India Hackathon</h3>
-                    <p>Secured Top 3 position in intra-college Smart India Hackathon (SIH), demonstrating strong problem-solving and teamwork skills.</p>
-                </div>
-                <div class="achievement-card" data-animate="fade-up" data-delay="100">
-                    <div class="achievement-icon medal">
-                        <i class="fas fa-medal"></i>
-                    </div>
-                    <h3>2nd Prize — Code Scramble</h3>
-                    <p>Won 2nd Prize at Code Scramble, PSNA College, 2025 — competitive coding event testing algorithmic skills.</p>
-                </div>
-                <div class="achievement-card" data-animate="fade-up" data-delay="200">
-                    <div class="achievement-icon vr">
-                        <i class="fas fa-vr-cardboard"></i>
-                    </div>
-                    <h3>Regenhack VR 2.0</h3>
-                    <p>Participated in Regenhack VR 2.0 Hackathon at SRM Institute — competitive coding emphasizing logic building and problem solving.</p>
-                </div>
-                <div class="achievement-card" data-animate="fade-up" data-delay="300">
-                    <div class="achievement-icon fire">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h3>170+ LeetCode Problems</h3>
-                    <p>Solved 170+ problems on LeetCode and earned a 50-day coding streak badge, showcasing consistency and dedication.</p>
-                </div>
-                <div class="achievement-card" data-animate="fade-up" data-delay="400">
-                    <div class="achievement-icon film">
-                        <i class="fas fa-film"></i>
-                    </div>
-                    <h3>4th Prize — Short Film</h3>
-                    <p>4th Prize in Short Film Competition, PSNA College, 2025 — recognized for creativity, storytelling, and video production.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section class="section" id="certifications">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">05. Certifications</span>
-                <h2 class="section-title">Professional Credentials</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="certifications-grid">
-                <div class="cert-card featured" data-animate="fade-up" data-delay="0">
-                    <div class="cert-badge">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <div class="cert-info">
-                        <h3>AWS Data Engineer Associate</h3>
-                        <p class="cert-issuer">Amazon Web Services</p>
-                        <a href="https://www.credly.com/badges/08225dc3-dbf9-410e-893d-8983459ab809/public_url" target="_blank" rel="noopener noreferrer" class="cert-link">
-                            View Credential <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                    <div class="cert-ribbon">AWS</div>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-delay="100">
-                    <div class="cert-badge">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Data Analytics</h3>
-                        <p class="cert-issuer">Simplilearn</p>
-                    </div>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-delay="200">
-                    <div class="cert-badge">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Python Programming</h3>
-                        <p class="cert-issuer">Geeks for Geeks</p>
-                    </div>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-delay="300">
-                    <div class="cert-badge">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Core Java</h3>
-                        <p class="cert-issuer">Code Tantra</p>
-                    </div>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-delay="400">
-                    <div class="cert-badge">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Git & GitHub</h3>
-                        <p class="cert-issuer">DataCamp</p>
-                    </div>
-                </div>
-                <div class="cert-card" data-animate="fade-up" data-delay="500">
-                    <div class="cert-badge">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="cert-info">
-                        <h3>Automation Developer Associate</h3>
-                        <p class="cert-issuer">ICT Academy — UiPath</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="section section-dark" id="education">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">06. Education</span>
-                <h2 class="section-title">Academic Journey</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="education-timeline">
-                <div class="timeline-item" data-animate="fade-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="timeline-year">2023 — 2027</span>
-                            <span class="timeline-badge">Current</span>
-                        </div>
-                        <h3>Bachelor of Technology (B.Tech)</h3>
-                        <h4>Artificial Intelligence and Data Engineering</h4>
-                        <p class="timeline-institution">
-                            <i class="fas fa-university"></i>
-                            PSNA College of Engineering and Technology, Dindigul
-                        </p>
-                        <div class="timeline-score">
-                            <div class="score-bar">
-                                <div class="score-fill" data-width="83.1"></div>
-                            </div>
-                            <span class="score-text">CGPA: 8.31 (Till 5th Sem)</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item" data-animate="fade-up" data-delay="200">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <span class="timeline-year">2023</span>
-                        </div>
-                        <h3>Higher Secondary Certificate (HSC)</h3>
-                        <h4>Class 12</h4>
-                        <p class="timeline-institution">
-                            <i class="fas fa-school"></i>
-                            Vidya Sikshaa Matric Higher Secondary School, Dindigul
-                        </p>
-                        <div class="timeline-score">
-                            <div class="score-bar">
-                                <div class="score-fill" data-width="79.5"></div>
-                            </div>
-                            <span class="score-text">Score: 79.5%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="section-header" data-animate="fade-up">
-                <span class="section-tag">07. Contact</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-content" data-animate="fade-up">
-                <p class="contact-text">
-                    I'm actively seeking <strong>software engineering</strong> or <strong>data science</strong> opportunities. 
-                    Whether you have a role, a project idea, or just want to connect — my inbox is always open!
-                </p>
-                <div class="contact-cards">
-                    <a href="mailto:kishore456393@gmail.com" class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <p>kishore456393@gmail.com</p>
-                    </a>
-                    <a href="tel:+918838171287" class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h3>Phone</h3>
-                        <p>+91 8838171287</p>
-                    </a>
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Location</h3>
-                        <p>Dindigul, Tamil Nadu</p>
-                    </div>
-                </div>
-                <div class="contact-socials">
-                    <a href="https://github.com/Kishore-s-77" target="_blank" rel="noopener noreferrer" class="contact-social-btn github">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kishore-s-77" target="_blank" rel="noopener noreferrer" class="contact-social-btn linkedin">
-                        <i class="fab fa-linkedin-in"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://leetcode.com/u/kishore_s_77/" target="_blank" rel="noopener noreferrer" class="contact-social-btn leetcode">
-                        <i class="fas fa-code"></i>
-                        <span>LeetCode</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-text">
-                    Designed & Built by <strong>Kishore S</strong>
-                </p>
-                <p class="footer-copyright">
-                    © 2025 All Rights Reserved
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+<!-- ════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════ -->
+<script src="script.js"></script>
 </body>
 </html>
+
